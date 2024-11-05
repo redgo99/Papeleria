@@ -3,17 +3,16 @@ session_start();
 
 $error_message = "";
 $servername = "localhost";
-$username = "root";
-$contra = "";
-$dbname = "proyecto_mp4_db2";
-$port = "33065";
+$username = "mjaj";
+contra = "51124jjja$";
+$dbname = "papeleria";
 
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST['email'];
     $password = $_POST['password'];
 
-    $conn = new mysqli($servername, $username, $contra, $dbname, $port);
+    $conn = new mysqli($servername, $username, $contra, $dbname);
 
     if ($conn->connect_error) {
         die(json_encode(['error' => "Error de conexión: " . $conn->connect_error]));

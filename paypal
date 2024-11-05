@@ -1,0 +1,10 @@
+  <!-- APi de paypal -->
+  <script src="https://sandbox.paypal.com/sdk/js?client-id=ARycnZz_TxwRbhcTSO4kuA1HUdj7uaujYx6KpD5EmGKDm47cei1RpDt8HUQBoM2Y5z6d7laDrd7N9DZC"></script>
+
+<div id="paypal-button-container"></div>/* Boton de paypal */
+
+/* Hace la magia del botones */
+
+
+sb-b9hmu33125802@business.example.com
+.mDJ+4PF

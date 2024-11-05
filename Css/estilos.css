@@ -1,0 +1,543 @@
+:root {
+  --base1: #10002b;
+  --base2: #240046;
+  --base3: #3c096c;
+  --base4: #5a189a;
+  --base5: #7b2cbf;
+  --base6: #9d4edd;
+  --base7: #c77dff;
+  --base8: #e0aaff;
+
+  --blanco: #ffffff;
+  --verde: #52796f;
+  --rojo: #bc4749;
+  --azul: #a9def9;
+
+  --letra1: font-family: Arial, sans-serif;
+  --letra2:  font-family: "Pacifico", cursive;
+}
+
+body {
+  background-color: var(--blanco);
+}
+
+.cont {
+  position: absolute;
+  width: auto;
+  top: 15%;
+  background-color: var(--blanco);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+.cont > section {
+  -webkit-box-shadow: 16px 0px 30px -5px rgba(0, 0, 0, 0.67);
+  -moz-box-shadow: 16px 0px 30px -5px rgba(0, 0, 0, 0.67);
+  box-shadow: 16px 0px 30px -5px rgba(0, 0, 0, 0.67);
+
+  border-radius: 1rem;
+  padding: 2rem;
+  width: 80%;
+  display: grid;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+/* Estilos para secciones */
+
+/* INICIO CARRUSEL */
+
+.inicio {
+  align-items: center;
+  display: flex;
+  background-color: var(--base1);
+  justify-content: center;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.inicio > div {
+  position: relative;
+}
+
+.carrusel {
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  gap: 10px;
+  padding: 20px;
+}
+.carrusel img {
+  width: 350px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+.carousel-item {
+  width: 100%;
+}
+
+/* Ofertas */
+
+.ofertas {
+  background-color: var(--base3);
+}
+
+.ofertas h1 {
+  text-align: center;
+  font-size: 4rem;
+  font-family: "Pacifico", cursive;
+  color: #ffffff;
+  border-bottom: 2px solid white;
+
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+#cargar_oferta {
+  display: flex;
+  flex-wrap: wrap; /* Permite que los productos se envuelvan en varias líneas */
+  justify-content: space-around; /* Espacio igual entre productos */
+  gap: 20px; /* Espacio entre productos */
+  padding: 20px;
+}
+
+.alertaPO {
+  font-family: Arial, sans-serif;
+  color: var(--blanco);
+}
+/* Productos */
+
+.productos {
+  background-color: var(--base5);
+  /*   overflow-y: scroll; */
+  flex: 1; /* Permite que la sección de productos use espacio disponible */
+}
+.productos h1 {
+  border-bottom: 2px solid white;
+  font-family: "Pacifico", cursive;
+  font-size: 4rem;
+  text-align: center;
+  color: white;
+
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+/* Estilos para cargar productos */
+
+#cargar_productos {
+  display: flex;
+  flex-wrap: wrap; /* Permite que los productos se envuelvan en varias líneas */
+  justify-content: space-around; /* Espacio igual entre productos */
+  gap: 20px; /* Espacio entre productos */
+  padding: 20px; /* Espaciado interno */
+  /*   overflow-y: scroll; */
+}
+
+.p_producto {
+  border: 1px solid #ddd;
+  margin: 10px;
+  padding: 10px;
+  width: 200px; /* Ancho fijo para cada producto */
+  text-align: center;
+  background-color: var(--blanco);
+
+  -webkit-box-shadow: 16px 0px 30px -5px rgba(0, 0, 0, 0.67);
+  -moz-box-shadow: 16px 0px 30px -5px rgba(0, 0, 0, 0.67);
+  box-shadow: 16px 0px 30px -5px rgba(0, 0, 0, 0.67);
+
+  border-radius: 1rem;
+  padding: 2rem;
+}
+
+.p_producto > p{
+  font-family: Arial, sans-serif;
+}
+.p_producto img {
+  max-width: 100%; /* Ajustar la imagen al tamaño del producto */
+  height: auto; /* Mantener la proporción de la imagen */
+}
+
+#aggCarrito:hover {
+  background-color: var(--base7);
+  color: var(--blanco);
+
+  cursor: pointer;
+}
+
+#aggCarrito {
+  background-color: var(--base8);
+  border: none;
+  border-radius: 5px;
+}
+
+/* Contactos */
+
+.contactos {
+  background: var(--base6); /* footer */
+  text-align: center;
+  color: white;
+  padding: 40px;
+}
+
+.contactos h1 {
+  font-family: "Pacifico", cursive;
+  border-bottom: 2px solid white;
+  font-size: 3rem;
+  color: white;
+}
+
+/* NAVEGADOR */
+
+.logo > p {
+  font-family: "Pacifico", cursive;
+  font-size: 25px;
+}
+
+.logo > img {
+  width: 80px;
+  height: auto;
+  padding: 5px;
+}
+
+.menu {
+  font-family: Arial, sans-serif;
+  position: fixed;
+  z-index: 1000;
+  background-color: var(--base8);
+  min-height: 10%;
+  min-width: 100%;
+  font-size: 19px;
+  display: grid;
+  grid-template-columns: 35% 35% 30%;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+nav {
+  text-align: left;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* PRUEBA INICIO SESION */
+.open-modal-btn {
+  cursor: pointer;
+}
+
+.modal h2 {
+  font-family: "Pacifico", cursive;
+  font-size: 30px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  z-index: 1005;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1005;
+}
+
+.close-modal-btn {
+  float: right;
+  font-size: 20px;
+  font-weight: bold;
+  color: #aaa;
+  cursor: pointer;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.submit-btn {
+  background-color: var(--base4);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  width: 100%;
+}
+
+#crear {
+  background-color: var(--base4);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  width: 100%;
+  text-decoration: none;
+}
+
+#crear .submit-btn {
+  background-color: var(--base2);
+  color: white;
+  border: none;
+  padding: 10px 24px;
+  cursor: pointer;
+  margin-bottom: 2px;
+  border-radius: 10px;
+  width: 100%;
+}
+#cartModal .submit-btn {
+  background-color: var(--base2);
+  color: white;
+  border: none;
+  padding: 10px 24px;
+  cursor: pointer;
+  margin-bottom: 2px;
+  border-radius: 10px;
+  width: 100%;
+}
+
+/*  */
+.bi-cart4 {
+  font-size: 25px;
+}
+
+/* FILTRO BUSQUEDA CATALOGO */
+.filter-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 5em;
+}
+
+.filter-container > input {
+  font-family: Arial, sans-serif;
+  font-size: 1.5rem;
+}
+
+.filter-container > select {
+  font-family: Arial, sans-serif;
+  font-size: 1.5rem;
+  background-color: var(--base8);
+}
+
+option {
+  background-color: var(--base8);
+}
+
+/* ESTILOS BOTON WHATSAP E INSTAGRAM */
+.bi-instagram:hover {
+  background-color: #f09433;
+  color: white;
+  box-shadow: 0 0 15px #f09433, /* Naranja */ 0 0 30px #e6683c,
+    /* Naranja más oscuro */ 0 0 45px #dc2743, /* Rojo */ 0 0 60px #cc2366,
+    /* Rosa */ 0 0 75px #bc1888, /* Morado oscuro */ 0 0 90px #833ab4;
+  /* Morado */
+}
+
+.bi-whatsapp:hover {
+  background-color: #25d366;
+  color: white;
+  box-shadow: 0 0 15px #25d366, /* Verde principal */ 0 0 30px #20b954,
+    /* Verde más oscuro */ 0 0 45px #1ebd5b,
+    /* Verde intermedio */ 0 0 60px #128c7e, /* Verde oscuro */ 0 0 75px #075e54;
+  /* Verde profundo */
+}
+#car .bi-cart4 {
+  text-align: initial;
+  font-size: 20px;
+  color: white;
+  margin: initial;
+  border-radius: initial;
+  padding: initial;
+  box-shadow: none;
+  transition: none;
+}
+#ins.bi {
+  all: unset; /* Esta línea desactiva todos los estilos CSS en el icono */
+}
+
+#sr.bi {
+  color: white;
+  all: unset;
+}
+.bi {
+  text-align: center;
+  font-size: 20px;
+  color: rgb(250, 250, 250);
+  margin: 2%;
+  border-radius: 50%;
+  padding: 13px;
+
+  box-shadow: 0px 5px 10px rgb(0, 0, 0, 0.35);
+  transition: 0.3s ease;
+}
+
+#xx.active,
+#xx:hover {
+  background: none;
+  transition: 0.3s;
+  pointer-events: all;
+}
+
+/* Botones para acceder a los CRUDs */
+.crud-buttons button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+}
+
+.crud-buttons button:hover {
+  background-color: #0056b3;
+}
+
+/* CSS para el modal de perfil */
+.modal-perfil {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--base6);
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(63, 60, 60, 0.2);
+  z-index: 1000;
+  border-radius: 5%;
+}
+
+.modal-perfil .modal-content {
+  position: relative;
+  background-color: var(--base6);
+}
+
+.modal-perfil .close-modal-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #333;
+}
+
+.modal-perfil h2 {
+  font-family: "Pacifico", cursive;
+  font-size: 30px;
+}
+
+.modal-perfil p {
+  margin: 5px 0;
+  font-size: 22px;
+  color: black;
+}
+
+.modal-perfil strong {
+  margin: 5px 0;
+  font-size: 23px;
+  color: black;
+  font-weight: bold;
+}
+#conf.bi {
+  all: unset; /* Esta línea desactiva todos los estilos CSS en el icono */
+}
+
+/* CSS para el modal de perfil */
+.modal-profile {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  border-radius: 10px;
+}
+
+.modal-profile .modal-content {
+  position: relative;
+}
+
+.modal-profile .close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #333;
+}
+
+.modal-profile h2 {
+  margin: 0 0 10px;
+  font-family: "Pacifico", cursive;
+}
+
+.modal-profile button {
+  margin-top: 10px;
+  padding: 10px 15px;
+  cursor: pointer;
+  border: none;
+  background-color: var(--base4);
+  color: white;
+  border-radius: 4px;
+}
+
+.modal-profile button:hover {
+  background-color: var(--base3);
+}

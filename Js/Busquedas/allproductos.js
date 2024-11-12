@@ -1,6 +1,6 @@
 async function cargarProductos() {
   try {
-    const response = await fetch("../PHP/obtenerprod.php");
+    const response = await fetch("../../PHP/obtenerprod.php");
     const html = await response.text();
     const div = document.getElementById("ocultarProductos");
     div.style.display = "block";
@@ -16,7 +16,7 @@ async function cargarProductos() {
   }
 
   try {
-    const response = await fetch("../PHP/obtenerOfertas.php");
+    const response = await fetch("../../PHP/obtenerOfertas.php");
     const html = await response.text();
     document.getElementById("cargar_ofertas").innerHTML = html;
   } catch (error) {

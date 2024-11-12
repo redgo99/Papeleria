@@ -18,7 +18,7 @@ function filtraCategoria() {
       div2.style.display = "block";
         
 
-      const niieda = "PHP/FuncionesBusquedas/obtenerPCategoria.php";
+      const niieda = "../PHP/FuncionesBusquedas/obtenerPCategoria.php";
     //   window.location.href =niieda;
 
       fetch(niieda, {

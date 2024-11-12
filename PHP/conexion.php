@@ -1,11 +1,11 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
+$servername = "basejjja.mysql.database.azure.com";
+$username = "mjaj";
+$password = "51124jjja$";
 $dbname = "proyecto_mp4_db2";
-$port = "33065";
 
-$conn = new mysqli($servername, $username, $password, $dbname, $port);
+
+$conn = new mysqli($servername, $username, $password, $dbname);
 
 // Verificar si hubo un error de conexión
 if ($conn->connect_errno) {

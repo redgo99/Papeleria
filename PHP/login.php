@@ -2,11 +2,11 @@
 <?php
 session_start();
 
-$servername = "localhost";
-$username = "root";
-$contra = "";
+$servername = "https://prod.liveshare.vsengsaas.visualstudio.com/join?E464B703BF290280EE76A6A84D29E0D4CB55";
+$username = "mjaj";
+$contra = "51124jjja$";
 $dbname = "proyecto_mp4_db2";
-$port = "33065";
+$port = "3306";
 
 $response = [];
 

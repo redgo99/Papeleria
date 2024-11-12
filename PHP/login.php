@@ -2,11 +2,11 @@
 <?php
 session_start();
 
-$servername = "https://prod.liveshare.vsengsaas.visualstudio.com/join?E464B703BF290280EE76A6A84D29E0D4CB55";
+$servername = "basejjja.mysql.database.azure.com";
 $username = "mjaj";
-$contra = "51124jjja$";
+$password = "51124jjja$";
 $dbname = "proyecto_mp4_db2";
-$port = "3306";
+
 
 $response = [];
 
@@ -14,7 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST['email'];
     $password = $_POST['password'];
 
-    $conn = new mysqli($servername, $username, $contra, $dbname, $port);
+    $conn = new mysqli($servername, $username, $password, $dbname);
 
     if ($conn->connect_error) {
         $response['error'] = "Error de conexión: " . $conn->connect_error;
